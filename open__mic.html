@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open F8</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+        body {
+            background: #0e0e1b;
+        }
+        #mic {
+            font-family: serif;
+            color: #fff;
+            font-size: x-large;
+            margin-top: 15%;
+            padding: 5% 10%;
+            background: red;
+            border: none;
+            text-shadow: 0 0 20px #fff;
+            box-shadow: 0 0 30px red;
+            transition: .4s;
+        }
+        #status {
+            font-size: xxx-large;
+        }
+        .active {
+            color: rgb(255, 175, 175) !important;
+            box-shadow: inset 0 0 20px #000 !important;
+            translate: 0 10px !important;
+        }
+    </style>
+</head>
+<body>
+    <section class="w-100">
+        <h2 id="status" class="lead position-relative my-5 text-white text-center top-50">
+            <span> Microfone: </span>
+            <br> 
+            <span id="status_output" class=""></span> 
+        </h2>
+        <button id="mic" class="position-relative w-75 top-50 start-50 translate-middle rounded-3" onclick="open_mic()">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-mic" viewBox="0 0 16 16">
+                    <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+                    <path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z"/>
+                </svg>
+            </span>
+            <span class=""> MIC </span>
+        </button>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
